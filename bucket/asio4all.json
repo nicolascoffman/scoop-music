@@ -1,0 +1,26 @@
+{
+    "version": "2.22",
+    "description": "Universal ASIO driver for WDM audio devices, for low-latency audio on hardware without a native ASIO driver.",
+    "homepage": "https://asio4all.org",
+    "license": "Freeware",
+    "notes": [
+        "SYSTEM DRIVER. This installs a system-wide audio driver and requires administrator rights.",
+        "Scoop cannot cleanly track or roll back driver state. Uninstall via Windows 'Apps & features', not 'scoop uninstall'."
+    ],
+    "url": "https://asio4all.org/downloads/ASIO4ALL_2_22.exe#/setup.exe",
+    "hash": "0d4f0c63bf5df077e4c74f18372f72b8e875a9abea499fea78aaa9f56022ac7e",
+    "installer": {
+        "file": "setup.exe",
+        "args": [
+            "/S"
+        ]
+    },
+    "checkver": {
+        "url": "https://asio4all.org/about/download-asio4all/",
+        "regex": "ASIO4ALL_(\d+)_(\d+)\.exe",
+        "replace": "$1.$2"
+    },
+    "autoupdate": {
+        "url": "https://asio4all.org/downloads/ASIO4ALL_$underscoreVersion.exe#/setup.exe"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "version": "1.0.16.27",
+    "description": "Creates virtual loopback MIDI ports for routing MIDI between applications on the same machine.",
+    "homepage": "https://www.tobias-erichsen.de/software/loopmidi.html",
+    "license": "Freeware (donationware)",
+    "notes": [
+        "SYSTEM DRIVER. Installs a virtual MIDI driver and requires administrator rights.",
+        "Uninstall via Windows 'Apps & features', not 'scoop uninstall'."
+    ],
+    "url": "https://www.tobias-erichsen.de/wp-content/uploads/2020/01/loopMIDISetup_1_0_16_27.zip",
+    "hash": "975399eb76e2c5a1d553ecd8975ab361261ccab8fd9412b8060b19877cb4e0d5",
+    "installer": {
+        "file": "loopMIDISetup.exe"
+    },
+    "checkver": {
+        "url": "https://www.tobias-erichsen.de/software/loopmidi.html",
+        "regex": "loopMIDISetup_(\d+)_(\d+)_(\d+)_(\d+)\.zip",
+        "replace": "$1.$2.$3.$4"
+    },
+    "autoupdate": {
+        "url": "https://www.tobias-erichsen.de/wp-content/uploads/2020/01/loopMIDISetup_$underscoreVersion.zip"
+    }
+}

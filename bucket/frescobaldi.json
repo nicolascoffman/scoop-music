@@ -1,0 +1,24 @@
+{
+    "version": "4.0.7",
+    "description": "Sheet-music text editor for LilyPond, with score preview, MIDI playback and point-and-click navigation.",
+    "homepage": "https://frescobaldi.org",
+    "license": "GPL-2.0-or-later",
+    "url": "https://github.com/frescobaldi/frescobaldi/releases/download/v4.0.7/Frescobaldi-4.0.7.msi",
+    "hash": "600257774c74671539cd61b4388d98bd24c5e0c8b6effc520d17699ed17e9889",
+    "bin": "frescobaldi.exe",
+    "shortcuts": [
+        [
+            "frescobaldi.exe",
+            "Frescobaldi"
+        ]
+    ],
+    "suggest": {
+        "LilyPond": "main/lilypond"
+    },
+    "checkver": {
+        "github": "https://github.com/frescobaldi/frescobaldi"
+    },
+    "autoupdate": {
+        "url": "https://github.com/frescobaldi/frescobaldi/releases/download/v$version/Frescobaldi-$version.msi"
+    }
+}

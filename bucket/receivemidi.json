@@ -1,0 +1,17 @@
+{
+    "version": "1.6.1",
+    "description": "Command-line tool for monitoring and logging incoming MIDI messages.",
+    "homepage": "https://github.com/gbevin/ReceiveMIDI",
+    "license": "GPL-3.0-or-later",
+    "url": "https://github.com/gbevin/ReceiveMIDI/releases/download/1.6.1/receivemidi-windows-1.6.1.zip",
+    "hash": "e80fe6164067900ba264eaa06c83709a6dca53842bdd0ad9eb6c8b5cc9586fe2",
+    "extract_dir": "receivemidi-windows-1.6.1",
+    "bin": "receivemidi.exe",
+    "checkver": {
+        "github": "https://github.com/gbevin/ReceiveMIDI"
+    },
+    "autoupdate": {
+        "url": "https://github.com/gbevin/ReceiveMIDI/releases/download/$version/receivemidi-windows-$version.zip",
+        "extract_dir": "receivemidi-windows-$version"
+    }
+}

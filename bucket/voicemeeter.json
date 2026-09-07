@@ -1,0 +1,26 @@
+{
+    "version": "1.1.2.2",
+    "description": "Virtual audio mixer and routing console for Windows, mixing hardware and application audio streams. Donationware.",
+    "homepage": "https://vb-audio.com/Voicemeeter/",
+    "license": "Freeware (donationware)",
+    "notes": [
+        "SYSTEM DRIVER. Installs virtual audio devices, requires administrator rights and a reboot.",
+        "Uninstall via Windows 'Apps & features', not 'scoop uninstall'."
+    ],
+    "url": "https://download.vb-audio.com/Download_CABLE/VoicemeeterSetup_v1122.zip",
+    "hash": "4d63bfe2a5eaea8ccf6ea8abe27c053c05689ccc11bf365130c6b246973ba4fa",
+    "installer": {
+        "file": "voicemeetersetup.exe",
+        "args": [
+            "-i"
+        ]
+    },
+    "checkver": {
+        "url": "https://vb-audio.com/Voicemeeter/index.htm",
+        "regex": "VoicemeeterSetup_v(\d)(\d)(\d)(\d)\.zip",
+        "replace": "$1.$2.$3.$4"
+    },
+    "autoupdate": {
+        "url": "https://download.vb-audio.com/Download_CABLE/VoicemeeterSetup_v$cleanVersion.zip"
+    }
+}

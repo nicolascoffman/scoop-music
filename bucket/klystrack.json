@@ -1,0 +1,21 @@
+{
+    "version": "1.7.6",
+    "description": "Chiptune tracker with a built-in synthesizer engine, in the style of classic home-computer sound chips.",
+    "homepage": "https://github.com/kometbomb/klystrack",
+    "license": "MIT",
+    "url": "https://github.com/kometbomb/klystrack/releases/download/1.7.6/klystrack-1.7.6-win32.zip",
+    "hash": "74961a3a15b537a681a1db14c9a3429f0ffdd44978518cff6e0dc8c100f3a7ce",
+    "bin": "klystrack.exe",
+    "shortcuts": [
+        [
+            "klystrack.exe",
+            "klystrack"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/kometbomb/klystrack"
+    },
+    "autoupdate": {
+        "url": "https://github.com/kometbomb/klystrack/releases/download/$version/klystrack-$version-win32.zip"
+    }
+}

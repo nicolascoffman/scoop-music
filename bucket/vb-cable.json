@@ -1,0 +1,25 @@
+{
+    "version": "1.0.3.8",
+    "description": "VB-CABLE virtual audio device: routes application audio output into a recordable input. Donationware.",
+    "homepage": "https://vb-audio.com/Cable/",
+    "license": "Freeware (donationware)",
+    "notes": [
+        "SYSTEM DRIVER. Requires administrator rights and a reboot after installation.",
+        "The installer is run automatically. If it fails, run VBCABLE_Setup_x64.exe from the app directory as administrator.",
+        "Uninstall by running the same setup and choosing Remove Driver, not by 'scoop uninstall'."
+    ],
+    "url": "https://download.vb-audio.com/Download_CABLE/VBCABLE_Driver_Pack45.zip",
+    "hash": "b950e39f01af1d04ea623c8f6d8eb9b6ea5c477c637295fabf20631c85116bfb",
+    "installer": {
+        "file": "VBCABLE_Setup_x64.exe"
+    },
+    "bin": "VBCABLE_ControlPanel.exe",
+    "checkver": {
+        "url": "https://vb-audio.com/Cable/",
+        "regex": "(?s)VBCABLE_Driver_Pack([\d]+)\.zip",
+        "replace": "1.0.3.8"
+    },
+    "autoupdate": {
+        "url": "https://download.vb-audio.com/Download_CABLE/VBCABLE_Driver_Pack45.zip"
+    }
+}

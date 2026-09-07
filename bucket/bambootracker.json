@@ -1,0 +1,23 @@
+{
+    "version": "0.6.5",
+    "description": "Music tracker for the Yamaha YM2608 (OPNA) chip used in the NEC PC-8801/9801.",
+    "homepage": "https://github.com/BambooTracker/BambooTracker",
+    "license": "GPL-2.0-or-later",
+    "url": "https://github.com/BambooTracker/BambooTracker/releases/download/v0.6.5/BambooTracker-v0.6.5-windows-10-64bit.zip",
+    "hash": "e24022d079655864b24757b642acd62cb31fe029564673a04667210a96cfdf8f",
+    "extract_dir": "BambooTracker-v0.6.5-windows-10-64bit",
+    "bin": "BambooTracker.exe",
+    "shortcuts": [
+        [
+            "BambooTracker.exe",
+            "BambooTracker"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/BambooTracker/BambooTracker"
+    },
+    "autoupdate": {
+        "url": "https://github.com/BambooTracker/BambooTracker/releases/download/v$version/BambooTracker-v$version-windows-10-64bit.zip",
+        "extract_dir": "BambooTracker-v$version-windows-10-64bit"
+    }
+}

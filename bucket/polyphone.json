@@ -1,0 +1,21 @@
+{
+    "version": "2.6.0",
+    "description": "SoundFont editor for creating and editing sf2, sf3 and sfz instrument banks.",
+    "homepage": "https://www.polyphone.io",
+    "license": "GPL-3.0-or-later",
+    "url": "https://github.com/davy7125/polyphone/releases/download/2.6.0/Polyphone_2.6.0-windows_x64-portable.zip",
+    "hash": "55fd6d242cc14d92cc78bfda5c8e40559a7f4184a721801a02d08eb87ffcf3c9",
+    "bin": "polyphone.exe",
+    "shortcuts": [
+        [
+            "polyphone.exe",
+            "Polyphone"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/davy7125/polyphone"
+    },
+    "autoupdate": {
+        "url": "https://github.com/davy7125/polyphone/releases/download/$version/Polyphone_$version-windows_x64-portable.zip"
+    }
+}

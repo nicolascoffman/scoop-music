@@ -1,0 +1,23 @@
+{
+    "version": "1.4.2",
+    "description": "System-wide parametric equalizer implemented as an Audio Processing Object. Pairs with the Peace GUI.",
+    "homepage": "https://sourceforge.net/projects/equalizerapo/",
+    "license": "LGPL-2.1-or-later",
+    "notes": [
+        "SYSTEM DRIVER. Installs an audio processing object, requires administrator rights and a reboot.",
+        "Its installer asks which playback devices to hook, so it runs interactively.",
+        "Uninstall via Windows 'Apps & features', not 'scoop uninstall'."
+    ],
+    "url": "https://downloads.sourceforge.net/project/equalizerapo/1.4.2/EqualizerAPO-x64-1.4.2.exe#/setup.exe",
+    "hash": "7403be7427bbe1936a40dded082829b6e217fc4f5990fee5cba501f0ae055afa",
+    "installer": {
+        "file": "setup.exe"
+    },
+    "checkver": {
+        "url": "https://sourceforge.net/projects/equalizerapo/files/",
+        "regex": "/equalizerapo/files/([\d.]+)/"
+    },
+    "autoupdate": {
+        "url": "https://downloads.sourceforge.net/project/equalizerapo/$version/EqualizerAPO-x64-$version.exe#/setup.exe"
+    }
+}

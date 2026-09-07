@@ -1,0 +1,22 @@
+{
+    "version": "1.0.1",
+    "description": "Real-time MIDI monitor that visualizes MIDI activity per channel. Standalone app plus VST3/CLAP/AU plugin.",
+    "homepage": "https://github.com/gbevin/ShowMIDI",
+    "license": "GPL-3.0-or-later",
+    "url": "https://github.com/gbevin/ShowMIDI/releases/download/1.0.1/ShowMIDI-Windows-1.0.1.exe#/setup.exe",
+    "hash": "069e5ce0dc395c8d53111daa12c0f34d1425e2f39fa24a0222c727da04c46828",
+    "innosetup": true,
+    "bin": "ShowMIDI.exe",
+    "shortcuts": [
+        [
+            "ShowMIDI.exe",
+            "ShowMIDI"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/gbevin/ShowMIDI"
+    },
+    "autoupdate": {
+        "url": "https://github.com/gbevin/ShowMIDI/releases/download/$version/ShowMIDI-Windows-$version.exe#/setup.exe"
+    }
+}

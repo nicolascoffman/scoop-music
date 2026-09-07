@@ -1,0 +1,25 @@
+{
+    "version": "1.10b",
+    "description": "Flexible universal ASIO driver built on PortAudio, supporting WASAPI, KS, DirectSound and MME backends.",
+    "homepage": "https://github.com/dechamps/FlexASIO",
+    "license": "MIT",
+    "notes": [
+        "SYSTEM DRIVER. Installs a system-wide ASIO driver and requires administrator rights.",
+        "Configure it with FlexASIOGUI or by editing FlexASIO.toml. Uninstall via Windows 'Apps & features'."
+    ],
+    "url": "https://github.com/dechamps/FlexASIO/releases/download/flexasio-1.10b/FlexASIO-1.10b.exe#/setup.exe",
+    "hash": "fe496bcc08d6c421c6244c8a60ac7b538560bda138000fd1a54ab8ebce031209",
+    "installer": {
+        "file": "setup.exe",
+        "args": [
+            "/S"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/dechamps/FlexASIO",
+        "regex": "flexasio-([\d.]+[a-z]?)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/dechamps/FlexASIO/releases/download/flexasio-$version/FlexASIO-$version.exe#/setup.exe"
+    }
+}

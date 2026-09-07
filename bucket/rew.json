@@ -1,0 +1,23 @@
+{
+    "version": "5.31.3",
+    "description": "Room EQ Wizard: acoustic measurement, room analysis and EQ filter design. Requires a Java runtime bundled by the installer.",
+    "homepage": "https://www.roomeqwizard.com",
+    "license": "Freeware",
+    "notes": "REW runs its own installer. Launch it from the Start Menu after installing.",
+    "url": "https://www.roomeqwizard.com/installers/REW_windows-x64_5_31_3.exe#/setup.exe",
+    "hash": "a547212771f213ec2461f5861a44e749ef41c7650f7478b1dc133cbee0faf4b9",
+    "installer": {
+        "file": "setup.exe",
+        "args": [
+            "-q"
+        ]
+    },
+    "checkver": {
+        "url": "https://www.roomeqwizard.com/downloads.html",
+        "regex": "REW_windows-x64_(\d+)_(\d+)_(\d+)\.exe",
+        "replace": "$1.$2.$3"
+    },
+    "autoupdate": {
+        "url": "https://www.roomeqwizard.com/installers/REW_windows-x64_$underscoreVersion.exe#/setup.exe"
+    }
+}

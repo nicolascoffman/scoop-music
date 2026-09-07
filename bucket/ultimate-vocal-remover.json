@@ -1,0 +1,18 @@
+{
+    "version": "5.6.0",
+    "description": "AI stem separation GUI: split songs into vocals, drums, bass and other. Downloads models on first run.",
+    "homepage": "https://github.com/Anjok07/ultimatevocalremovergui",
+    "license": "MIT",
+    "notes": "Runs the vendor installer. Separation models are downloaded from inside the app on first use.",
+    "url": "https://github.com/Anjok07/ultimatevocalremovergui/releases/download/v5.6/UVR_v5.6.0_setup.exe#/setup.exe",
+    "hash": "3516daea39ccb9fead27e8ba5879375a08b20a428264a7c1be6db1be7765b0fe",
+    "installer": {
+        "file": "setup.exe",
+        "args": [
+            "/S"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/Anjok07/ultimatevocalremovergui"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "version": "26.02",
+    "description": "Free/open virtual modular synthesizer, a VCV Rack fork with ~2000 modules bundled. Standalone and plugin. NOTE: ~1.1 GB download.",
+    "homepage": "https://github.com/DISTRHO/Cardinal",
+    "license": "GPL-3.0-or-later",
+    "url": "https://github.com/DISTRHO/Cardinal/releases/download/26.02/Cardinal-win64-26.02.zip",
+    "hash": "03407f810f99b02e62a41970ae066c1a64591edc924735f3bdec66db1958cb26",
+    "bin": [
+        "CardinalNative.exe",
+        "CardinalJACK.exe"
+    ],
+    "shortcuts": [
+        [
+            "CardinalNative.exe",
+            "Cardinal"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/DISTRHO/Cardinal"
+    },
+    "autoupdate": {
+        "url": "https://github.com/DISTRHO/Cardinal/releases/download/$version/Cardinal-win64-$version.zip"
+    }
+}

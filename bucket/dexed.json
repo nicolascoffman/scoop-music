@@ -1,0 +1,21 @@
+{
+    "version": "1.0.1",
+    "description": "Yamaha DX7 FM synthesizer emulation. Standalone plus VST3/CLAP plugin, DX7-compatible patches.",
+    "homepage": "https://github.com/asb2m10/dexed",
+    "license": "GPL-3.0-or-later",
+    "url": "https://github.com/asb2m10/dexed/releases/download/v1.0.1/Dexed-1.0.1-win.zip",
+    "hash": "1f118445f2c5c411636bb41ddf8b456db09af74cd38f9ede8a93a01020505f05",
+    "bin": "Dexed.exe",
+    "shortcuts": [
+        [
+            "Dexed.exe",
+            "Dexed"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/asb2m10/dexed"
+    },
+    "autoupdate": {
+        "url": "https://github.com/asb2m10/dexed/releases/download/v$version/Dexed-$version-win.zip"
+    }
+}

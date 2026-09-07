@@ -1,0 +1,21 @@
+{
+    "version": "1.0.0",
+    "description": "Highly automated DAW with a modular workflow. This is the freely downloadable trial build.",
+    "homepage": "https://www.zrythm.org",
+    "license": "AGPL-3.0-or-later",
+    "notes": "This is the trial build. Purchase a licence at https://www.zrythm.org to remove its limitations.",
+    "url": "https://github.com/zrythm/zrythm/releases/download/v1.0.0/zrythm-trial-1.0.0-ms-setup.exe#/setup.exe",
+    "hash": "606f056350d50fe4a4e07afcbea2f892a9927a4e4fc3dadd3608352eb3afec6d",
+    "installer": {
+        "file": "setup.exe",
+        "args": [
+            "/S"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/zrythm/zrythm"
+    },
+    "autoupdate": {
+        "url": "https://github.com/zrythm/zrythm/releases/download/v$version/zrythm-trial-$version-ms-setup.exe#/setup.exe"
+    }
+}

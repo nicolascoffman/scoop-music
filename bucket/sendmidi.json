@@ -1,0 +1,17 @@
+{
+    "version": "1.4.3",
+    "description": "Command-line tool for sending MIDI messages. Companion to receivemidi and ShowMIDI.",
+    "homepage": "https://github.com/gbevin/SendMIDI",
+    "license": "GPL-3.0-or-later",
+    "url": "https://github.com/gbevin/SendMIDI/releases/download/1.4.3/sendmidi-windows-1.4.3.zip",
+    "hash": "af28227668a627fabe5dc7ba6351775b95ccc4c76d5ca3e6a187ee186c5803fe",
+    "extract_dir": "sendmidi-windows-1.4.3",
+    "bin": "sendmidi.exe",
+    "checkver": {
+        "github": "https://github.com/gbevin/SendMIDI"
+    },
+    "autoupdate": {
+        "url": "https://github.com/gbevin/SendMIDI/releases/download/$version/sendmidi-windows-$version.zip",
+        "extract_dir": "sendmidi-windows-$version"
+    }
+}
