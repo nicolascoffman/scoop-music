@@ -5,7 +5,7 @@
     "license": "GPL-2.0-or-later",
     "url": "https://downloads.mixxx.org/releases/2.5.6/mixxx-2.5.6-win64.msi",
     "hash": "0d1f01a1f5c2e4d4180cd462e60365d0230b405808e7bd2b6625b62a53a29c72",
-    "extract_dir": "SourceDir\Mixxx",
+    "extract_dir": "Mixxx",
     "bin": "mixxx.exe",
     "shortcuts": [
         [
@@ -15,7 +15,7 @@
     ],
     "checkver": {
         "url": "https://mixxx.org/download/",
-        "regex": "releases/([\d.]+)/mixxx-[\d.]+-win64\.msi"
+        "regex": "releases/([\\d.]+)/mixxx-[\\d.]+-win64\\.msi"
     },
     "autoupdate": {
         "url": "https://downloads.mixxx.org/releases/$version/mixxx-$version-win64.msi"

@@ -17,7 +17,7 @@
     },
     "checkver": {
         "url": "https://vb-audio.com/Voicemeeter/index.htm",
-        "regex": "VoicemeeterSetup_v(\d)(\d)(\d)(\d)\.zip",
+        "regex": "VoicemeeterSetup_v(\\d)(\\d)(\\d)(\\d)\\.zip",
         "replace": "$1.$2.$3.$4"
     },
     "autoupdate": {

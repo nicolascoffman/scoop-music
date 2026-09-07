@@ -19,7 +19,7 @@
     ],
     "checkver": {
         "github": "https://github.com/supercollider/supercollider",
-        "regex": "Version-([\d.]+)"
+        "regex": "Version-([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/supercollider/supercollider/releases/download/Version-$version/SuperCollider-$version-win64.zip"

@@ -5,10 +5,11 @@
     "license": "GPL-2.0-or-later",
     "url": "https://github.com/frescobaldi/frescobaldi/releases/download/v4.0.7/Frescobaldi-4.0.7.msi",
     "hash": "600257774c74671539cd61b4388d98bd24c5e0c8b6effc520d17699ed17e9889",
-    "bin": "frescobaldi.exe",
+    "extract_dir": "PFiles64\\Frescobaldi",
+    "bin": "Frescobaldi.exe",
     "shortcuts": [
         [
-            "frescobaldi.exe",
+            "Frescobaldi.exe",
             "Frescobaldi"
         ]
     ],
@@ -19,6 +20,7 @@
         "github": "https://github.com/frescobaldi/frescobaldi"
     },
     "autoupdate": {
-        "url": "https://github.com/frescobaldi/frescobaldi/releases/download/v$version/Frescobaldi-$version.msi"
+        "url": "https://github.com/frescobaldi/frescobaldi/releases/download/v$version/Frescobaldi-$version.msi",
+        "extract_dir": "PFiles64\\Frescobaldi"
     }
 }

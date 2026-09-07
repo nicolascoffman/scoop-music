@@ -15,7 +15,7 @@
     },
     "checkver": {
         "url": "https://sourceforge.net/projects/equalizerapo/files/",
-        "regex": "/equalizerapo/files/([\d.]+)/"
+        "regex": "/equalizerapo/files/([\\d.]+)/"
     },
     "autoupdate": {
         "url": "https://downloads.sourceforge.net/project/equalizerapo/$version/EqualizerAPO-x64-$version.exe#/setup.exe"

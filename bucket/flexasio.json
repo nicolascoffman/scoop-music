@@ -17,7 +17,7 @@
     },
     "checkver": {
         "github": "https://github.com/dechamps/FlexASIO",
-        "regex": "flexasio-([\d.]+[a-z]?)"
+        "regex": "flexasio-([\\d.]+[a-z]?)"
     },
     "autoupdate": {
         "url": "https://github.com/dechamps/FlexASIO/releases/download/flexasio-$version/FlexASIO-$version.exe#/setup.exe"

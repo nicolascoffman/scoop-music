@@ -13,6 +13,7 @@
         ]
     },
     "checkver": {
-        "github": "https://github.com/Anjok07/ultimatevocalremovergui"
+        "url": "https://api.github.com/repos/Anjok07/ultimatevocalremovergui/releases/latest",
+        "regex": "UVR_v([\\d.]+)_setup\\.exe"
     }
 }

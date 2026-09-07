@@ -8,19 +8,19 @@
     "extract_dir": "sunvox",
     "bin": [
         [
-            "sunvox\windows_x86_64\sunvox.exe",
+            "sunvox\\windows_x86_64\\sunvox.exe",
             "sunvox"
         ]
     ],
     "shortcuts": [
         [
-            "sunvox\windows_x86_64\sunvox.exe",
+            "sunvox\\windows_x86_64\\sunvox.exe",
             "SunVox"
         ]
     ],
     "checkver": {
         "url": "https://warmplace.ru/soft/sunvox/",
-        "regex": "sunvox-([\d.]+[a-z]?)\.zip"
+        "regex": "sunvox-([\\d.]+[a-z]?)\\.zip"
     },
     "autoupdate": {
         "url": "https://www.warmplace.ru/soft/sunvox/sunvox-$version.zip"

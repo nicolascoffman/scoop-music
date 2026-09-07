@@ -16,7 +16,7 @@
     "bin": "VBCABLE_ControlPanel.exe",
     "checkver": {
         "url": "https://vb-audio.com/Cable/",
-        "regex": "(?s)VBCABLE_Driver_Pack([\d]+)\.zip",
+        "regex": "(?s)VBCABLE_Driver_Pack([\\d]+)\\.zip",
         "replace": "1.0.3.8"
     },
     "autoupdate": {

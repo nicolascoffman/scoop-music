@@ -14,7 +14,7 @@
     },
     "checkver": {
         "url": "https://www.tobias-erichsen.de/software/loopmidi.html",
-        "regex": "loopMIDISetup_(\d+)_(\d+)_(\d+)_(\d+)\.zip",
+        "regex": "loopMIDISetup_(\\d+)_(\\d+)_(\\d+)_(\\d+)\\.zip",
         "replace": "$1.$2.$3.$4"
     },
     "autoupdate": {

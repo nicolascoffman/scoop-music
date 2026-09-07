@@ -17,7 +17,7 @@
     },
     "checkver": {
         "url": "https://asio4all.org/about/download-asio4all/",
-        "regex": "ASIO4ALL_(\d+)_(\d+)\.exe",
+        "regex": "ASIO4ALL_(\\d+)_(\\d+)\\.exe",
         "replace": "$1.$2"
     },
     "autoupdate": {
