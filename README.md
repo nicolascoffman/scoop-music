@@ -2,12 +2,12 @@
 
 A [Scoop](https://scoop.sh) bucket for music production, MIDI and audio tooling on Windows.
 
-It deliberately **does not duplicate** what the official `extras` bucket already ships. Audacity, REAPER, MuseScore, LMMS, OpenMPT, Furnace, MilkyTracker, Schism Tracker, Pure Data, plugdata, Sonic Pi, Surge, TuxGuitar, Sonic Visualiser, Praat, MusicBrainz Picard, Spek, ocenaudio, FamiStudio, OpenUtau and fluidsynth are all in `extras` — install those from there.
+It deliberately **does not duplicate** what the official `extras` bucket already ships. Audacity, REAPER, MuseScore, LMMS, OpenMPT, Furnace, MilkyTracker, Schism Tracker, Pure Data, plugdata, Sonic Pi, Surge, TuxGuitar, Sonic Visualiser, Praat, MusicBrainz Picard, Spek, ocenaudio, FamiStudio, OpenUtau and fluidsynth are all in `extras` - install those from there.
 
 ## Install
 
 ```bash
-scoop bucket add music https://github.com/USERNAME/scoop-music
+scoop bucket add music https://github.com/nicolascoffman/scoop-music
 ```
 
 ```bash
@@ -16,7 +16,7 @@ scoop install music/showmidi
 
 ## Apps
 
-### Portable — extract and run, no system changes
+### Portable - extract and run, no system changes
 
 | App | Description |
 |---|---|
@@ -43,10 +43,10 @@ These download and verify the vendor's own installer, then run it. They install 
 |---|---|
 | `midieditor` | MIDI file editor with piano-roll editing (interactive setup) |
 | `ultimate-vocal-remover` | AI stem separation; downloads models on first run |
-| `rew` | Room EQ Wizard — acoustic measurement and EQ design |
+| `rew` | Room EQ Wizard, acoustic measurement and EQ design |
 | `zrythm` | Automated DAW, freely downloadable trial build |
 
-### Audio drivers — read this first
+### Audio drivers - read this first
 
 These install **system-level audio drivers**. They require administrator rights, most require a reboot, and Scoop cannot meaningfully track or roll back driver state.
 
