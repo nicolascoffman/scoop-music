@@ -4,7 +4,8 @@
     "homepage": "https://zoomcorp.com/en/us/software-product-page/software-sub-cat/guitar-lab/",
     "license": "Freeware",
     "notes": [
-        "Runs Zoom's InstallShield setup, which installs to Program Files, outside the Scoop directory.",
+        "NOT unattended: Zoom's InstallShield setup is interactive and requires UAC elevation, so you must click through the wizard and approve the admin prompt.",
+        "Installs to C:\\Program Files\\ZOOM\\Guitar Lab, outside the Scoop directory.",
         "Uninstall via Windows 'Apps & features', not 'scoop uninstall'.",
         "Connect the pedal by USB and set it to the correct USB mode before launching."
     ],
