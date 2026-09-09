@@ -41,6 +41,7 @@ These download and verify the vendor's own installer, then run it. They install 
 
 | App | Description |
 |---|---|
+| `zoom-guitar-lab` | Zoom Guitar Lab, patch editor/librarian for Zoom guitar multi-effects pedals |
 | `midieditor` | MIDI file editor with piano-roll editing (interactive setup) |
 | `ultimate-vocal-remover` | AI stem separation; downloads models on first run |
 | `rew` | Room EQ Wizard, acoustic measurement and EQ design |

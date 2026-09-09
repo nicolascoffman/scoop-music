@@ -1,0 +1,25 @@
+{
+    "version": "7.3.0.130",
+    "description": "Zoom Guitar Lab: patch editor and librarian for Zoom guitar multi-effects pedals. Manages effects, amp models and artist patches, and backs up patches.",
+    "homepage": "https://zoomcorp.com/en/us/software-product-page/software-sub-cat/guitar-lab/",
+    "license": "Freeware",
+    "notes": [
+        "Runs Zoom's InstallShield setup, which is interactive and installs outside the Scoop directory.",
+        "Uninstall via Windows 'Apps & features', not 'scoop uninstall'.",
+        "Connect the pedal by USB and set it to the correct USB mode before launching."
+    ],
+    "url": "https://zoomcorp.com/media/documents/GuitarLab_Win_v7.3.0.130_E.zip",
+    "hash": "14320e70836b815d27e6458a88ac0d2ca706c36552f90809b0e386c1f4bad6b8",
+    "extract_dir": "GuitarLab_Win_v7.3.0.130_E",
+    "installer": {
+        "file": "Guitar Lab Setup.exe"
+    },
+    "checkver": {
+        "url": "https://zoomcorp.com/en/us/software-product-page/software-sub-cat/guitar-lab/",
+        "regex": "GuitarLab_Win_v([\\d.]+)_E\\.zip"
+    },
+    "autoupdate": {
+        "url": "https://zoomcorp.com/media/documents/GuitarLab_Win_v$version_E.zip",
+        "extract_dir": "GuitarLab_Win_v$version_E"
+    }
+}
