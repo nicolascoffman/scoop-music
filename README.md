@@ -46,12 +46,13 @@ These download and verify the vendor's own installer, then run it. They install 
 | `ultimate-vocal-remover` | AI stem separation; downloads models on first run |
 | `rew` | Room EQ Wizard, acoustic measurement and EQ design |
 | `zrythm` | Automated DAW, freely downloadable trial build |
+| `rme-totalmix-fx` | RME TotalMix FX 2.x mixer (interactive; needs an RME driver below) |
 
 ### Audio drivers - read this first
 
 These install **system-level audio drivers**. They require administrator rights, most require a reboot, and Scoop cannot meaningfully track or roll back driver state.
 
-**Uninstall them through Windows "Apps & features", not `scoop uninstall`.**
+**Uninstall them through Windows "Apps & features", not `scoop uninstall`.** The RME drivers are the exception: uninstall them by running `rmeinstaller.exe` from the app directory (`scoop prefix <app>`) and choosing Uninstall.
 
 | App | Description |
 |---|---|
@@ -61,6 +62,8 @@ These install **system-level audio drivers**. They require administrator rights,
 | `voicemeeter` | Virtual audio mixer and routing console |
 | `loopmidi` | Virtual loopback MIDI ports for routing MIDI between apps |
 | `equalizerapo` | System-wide parametric EQ as an Audio Processing Object |
+| `rme-fireface-usb-driver` | RME driver + TotalMix FX for Babyface, Fireface UC / UCX / UCX II / UFX / 802 (interactive) |
+| `rme-madiface-driver` | RME driver + TotalMix FX for Fireface UFX II / III / UFX+, ADI-2, Digiface, MADIface, USB.IO (interactive) |
 
 ## Notes
 

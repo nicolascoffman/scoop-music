@@ -1,0 +1,35 @@
+{
+    "version": "2.03",
+    "description": "RME TotalMix FX 2.x: scalable, Direct3D 12 mixer and routing console for RME interfaces. The installer can also install the classic 1.991 build.",
+    "homepage": "https://rme-audio.de/totalmix-fx.html",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://rme-audio.de/downloads.html"
+    },
+    "notes": [
+        "NOT unattended: RME's TotalMix FX Install Wizard is interactive and requires UAC elevation. It lets you choose version 2.x or 1.991.",
+        "Requires an RME driver to be installed first ('rme-fireface-usb-driver' or 'rme-madiface-driver'). Those drivers already bundle TotalMix FX 1.991, so you only need this package for 2.x.",
+        "TotalMix FX 2.x requires Windows 10 or newer and a Direct3D 12 capable GPU.",
+        "To switch between 2.x and 1.991 later, run '$dir\\TMInstaller.exe' again."
+    ],
+    "suggest": {
+        "RME driver": [
+            "rme-fireface-usb-driver",
+            "rme-madiface-driver"
+        ]
+    },
+    "url": "https://rme-audio.de/downloads/tmfx_203_1991_win.zip",
+    "hash": "e40cb00083a5a80b8315f15d3d1e2f9e204033c9c567ac28717eced3d4feef7a",
+    "installer": {
+        "file": "TMInstaller.exe",
+        "keep": true
+    },
+    "checkver": {
+        "url": "https://rme-audio.de/downloads.html",
+        "regex": "tmfx_(?<major>\\d)(?<minor>\\d{2})_(?<classic>\\d+)_win\\.zip",
+        "replace": "${major}.${minor}"
+    },
+    "autoupdate": {
+        "url": "https://rme-audio.de/downloads/tmfx_$cleanVersion_$matchClassic_win.zip"
+    }
+}

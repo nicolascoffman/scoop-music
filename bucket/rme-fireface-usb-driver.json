@@ -1,0 +1,30 @@
+{
+    "version": "1.276",
+    "description": "RME Fireface USB series driver (WDM/ASIO) with TotalMix FX, for Babyface / Babyface Pro / Pro FS, Fireface UC / UCX / UCX II / UFX / 802 / 802 FS.",
+    "homepage": "https://rme-audio.de/downloads.html",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://rme-audio.de/downloads.html"
+    },
+    "notes": [
+        "SYSTEM DRIVER. NOT unattended: RME's Driver Install Wizard is interactive and requires UAC elevation.",
+        "Requires Windows 10 (1709) or newer, x64 or Arm64. Installs to C:\\Program Files\\RME\\Fireface and bundles TotalMix FX 1.991.",
+        "Uninstall by running '$dir\\rmeinstaller.exe' and choosing Uninstall. RME does not support uninstalling from Windows 'Apps & features', and 'scoop uninstall' does not remove the driver.",
+        "For MADIface, Digiface, ADI-2 or Fireface UFX II / UFX III / UFX+ use 'rme-madiface-driver' instead.",
+        "Firmware updates (install the driver first): https://rme-audio.de/downloads/fut_usb_win.zip"
+    ],
+    "url": "https://rme-audio.de/downloads/driver_usb_win_1276.zip",
+    "hash": "7554280f285127938963374d36c55f4e9d98dd91b1699a6a386654c5458f2302",
+    "installer": {
+        "file": "rmeinstaller.exe",
+        "keep": true
+    },
+    "checkver": {
+        "url": "https://rme-audio.de/downloads.html",
+        "regex": "(?s)Windows 10 and up, Fireface USB series.*?driver_usb_win_(\\d)(\\d{3})\\.zip",
+        "replace": "$1.$2"
+    },
+    "autoupdate": {
+        "url": "https://rme-audio.de/downloads/driver_usb_win_$cleanVersion.zip"
+    }
+}

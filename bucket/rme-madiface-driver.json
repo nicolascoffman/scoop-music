@@ -1,0 +1,30 @@
+{
+    "version": "1.0.17",
+    "description": "RME MADIface USB series driver (WDM/ASIO) with TotalMix FX, for Fireface UFX II / UFX III / UFX+, ADI-2 series, Digiface, MADIface, OctaMic XTC and USB.IO.",
+    "homepage": "https://rme-audio.de/downloads.html",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://rme-audio.de/downloads.html"
+    },
+    "notes": [
+        "SYSTEM DRIVER. NOT unattended: RME's Driver Install Wizard is interactive and requires UAC elevation.",
+        "Requires Windows 10 (1709) or newer, x64 or Arm64. Installs to C:\\Program Files\\RME\\MADIface and bundles TotalMix FX 1.991.",
+        "Uninstall by running '$dir\\rmeinstaller.exe' and choosing Uninstall. RME does not support uninstalling from Windows 'Apps & features', and 'scoop uninstall' does not remove the driver.",
+        "For Babyface, Fireface UC / UCX / UCX II / UFX / 802 use 'rme-fireface-usb-driver' instead.",
+        "Firmware updates (install the driver first): https://rme-audio.de/downloads/fut_madiface_win.zip"
+    ],
+    "url": "https://www.rme-audio.de/downloads/driver_madiface_win_1017.zip",
+    "hash": "d6f964e64178bf8e69072737bcf7231c70741d0c0905096500d5a5c059940a42",
+    "installer": {
+        "file": "rmeinstaller.exe",
+        "keep": true
+    },
+    "checkver": {
+        "url": "https://rme-audio.de/downloads.html",
+        "regex": "driver_madiface_win_(\\d)(\\d)(\\d{2})\\.zip",
+        "replace": "$1.$2.$3"
+    },
+    "autoupdate": {
+        "url": "https://www.rme-audio.de/downloads/driver_madiface_win_$cleanVersion.zip"
+    }
+}
