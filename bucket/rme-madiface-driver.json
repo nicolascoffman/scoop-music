@@ -1,5 +1,5 @@
 {
-    "version": "1.0.17",
+    "version": "1.0.26",
     "description": "RME MADIface USB series driver (WDM/ASIO) with TotalMix FX, for Fireface UFX II / UFX III / UFX+, ADI-2 series, Digiface, MADIface, OctaMic XTC and USB.IO.",
     "homepage": "https://rme-audio.de/downloads.html",
     "license": {
@@ -13,8 +13,8 @@
         "For Babyface, Fireface UC / UCX / UCX II / UFX / 802 use 'rme-fireface-usb-driver' instead.",
         "Firmware updates (install the driver first): https://rme-audio.de/downloads/fut_madiface_win.zip"
     ],
-    "url": "https://www.rme-audio.de/downloads/driver_madiface_win_1017.zip",
-    "hash": "d6f964e64178bf8e69072737bcf7231c70741d0c0905096500d5a5c059940a42",
+    "url": "https://www.rme-audio.de/downloads/driver_madiface_win_1026.zip",
+    "hash": "1f70171340bae0b23084fb174d2280bfcac56c21bd713553e1bed61c1ebab456",
     "installer": {
         "file": "rmeinstaller.exe",
         "keep": true
