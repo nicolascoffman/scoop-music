@@ -1,5 +1,5 @@
 {
-    "version": "2.03",
+    "version": "2.10",
     "description": "RME TotalMix FX 2.x: scalable, Direct3D 12 mixer and routing console for RME interfaces. The installer can also install the classic 1.991 build.",
     "homepage": "https://rme-audio.de/totalmix-fx.html",
     "license": {
@@ -18,8 +18,8 @@
             "rme-madiface-driver"
         ]
     },
-    "url": "https://rme-audio.de/downloads/tmfx_203_1991_win.zip",
-    "hash": "e40cb00083a5a80b8315f15d3d1e2f9e204033c9c567ac28717eced3d4feef7a",
+    "url": "https://rme-audio.de/downloads/tmfx_210_1991_win.zip",
+    "hash": "c63d085a88768232b74a38a460dc7a7da8f395acde6263593124b7746599e0c4",
     "installer": {
         "file": "TMInstaller.exe",
         "keep": true
